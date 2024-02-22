@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: aqua;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .main_div{
+      position: absolute;
+      top: 150px;
+      width: 500px;
+      height: 400px;
+      box-shadow: 0px 0px 10px white;
+      border-radius: 20px;
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .child_div{
+        align-items: center;
+        justify-content: center;
+        color: rgb(222, 155, 41);
+        
+    }
+  .main_div input {
+            border: none;
+            background: none;
+            display: block;
+            margin: 5px auto;
+            text-align: center;
+            border: 3px solid rgba(50, 209, 127, 0.716);
+            padding: 5px 5px;
+            width: 150px;         
+            outline: none;
+            color: rgb(115, 205, 67);
+            border-radius: 10px;
+        }
+
+        .main_div input[ type = "submit"]:hover{
+            border-color:rgb(71, 81, 225);
+        }  
+        .main_div input[ type = "reset"]:hover{
+            border-color:rgb(71, 81, 225);
+        }
+        .main_div input[ type = "password"]:hover{
+            border-color:rgb(71, 81, 225);
+        }  
+        .main_div input[ type = "text"]:hover{
+            border-color:rgb(71, 81, 225);
+        }
+        a{
+            color: darkblue;
+        }
+  </style>
+</head>
+<body>
+    <div class="main_div">
+      <div class="child_div">
+        <table>
+            <form action="login" method="post">
+              <legend><h1>Login</h1></legend>
+                <tr>
+                  <td><label for="username"><b><i class="fa-regular fa-circle-user fa-lg"></i>  Username</b></label></td>
+                  <td><input type="text" id="username" name="name" placeholder="Username" required></td>
+                </tr>
+      
+                <tr>
+                  <td><label for="password"><b><i class="fa-solid fa-key fa-lg"></i> Password</b></label></td>
+                  <td><input type="password" id="password" name="password" placeholder="Password" required maxlength="8"></td>
+                </tr>
+      
+                <tr>
+                  <td> <input type="submit"value="Login"></td>
+                  <td> <input type="reset"value="Cancel"></td>
+                </tr>
+            </form>
+          </table>
+      <h2>
+        Forgot Password <br>
+        Do you  have an account? <br>
+        Create your Account.<a href="signup.html">SignUp</a>
+      </h2>
+      </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- https://img.freepik.com/premium-photo/green-lawn-city-park-sunny-light-warm-summer-day_537415-816.jpg -->
